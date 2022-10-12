@@ -37,11 +37,11 @@ namespace ExceptionHandlingExercise
 
                 }catch (Exception failed)
                 {
-                    Thread.Sleep(2000); // just for fun
+                    Thread.Sleep(2000); // extra just for fun
                     Console.WriteLine($"Unable to Parse '{item}'aborting....");
                     
                 }
-                finally
+                finally// extra
                 {
                     Console.WriteLine("attempting...");
                 }
@@ -68,7 +68,7 @@ namespace ExceptionHandlingExercise
                 Thread.Sleep(500);
                 Console.WriteLine(num);
             }
-            Console.WriteLine("finished");
+            Console.WriteLine("finished");//extra
         }
     }
 }
